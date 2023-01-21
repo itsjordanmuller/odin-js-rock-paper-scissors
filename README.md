@@ -11,8 +11,8 @@ A JavaScript Program meant to demonstrate the basic fundamentals of using HTML a
 - [x] Link External JS File
 
 ### getComputerChoice Function
-- [ ] Create Function 'getComputerChoice' to Randomly Pick
-- [ ] Use the Console to Ensure this Function is Behaving
+- [x] Create Function 'getComputerChoice' to Randomly Pick
+- [x] Use the Console to Ensure this Function is Behaving
 
 ### playRound Function
 - [ ] Create Function 'playound' to Play a Single Round
