@@ -5,10 +5,10 @@ A JavaScript Program meant to demonstrate the basic fundamentals of using HTML a
 
 ### Basic Setup
 - [x] Start Git Repo
-- [ ] Create README.md
-- [ ] Create Blank HTML Document
-- [ ] Create External JS File
-- [ ] Link External JS File
+- [x] Create README.md
+- [x] Create Blank HTML Document
+- [x] Create External JS File
+- [x] Link External JS File
 
 ### getComputerChoice Function
 - [ ] Create Function 'getComputerChoice' to Randomly Pick
