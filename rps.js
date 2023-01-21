@@ -13,4 +13,35 @@ function computerChoice(randomNum) {
     }
 }
 // Print Out Computer Choice in Console
-console.log(computerChoice(randomNum));
+computerSelection = computerChoice(randomNum);
+userInput = "rock";
+
+playerSelection = "Rock";
+
+console.log("Computer Choice: "+computerSelection)
+console.log("Player Choice: "+playerSelection)
+function playRound (playerSelection, computerSelection) {
+    if (computerSelection == playerSelection) {
+        return "It's a Tie!";
+    }
+    else if (computerSelection == "Paper" && playerSelection == "Rock") {
+        return "Computer Wins!"
+    } 
+    else if (computerSelection == "Rock" && playerSelection == "Scissors") {
+        return "Computer Wins!"
+    }
+    else if (computerSelection == "Scissors" && playerSelection == "Paper") {
+        return "Computer Wins!"
+    }
+    else if (computerSelection == "Rock" && playerSelection == "Paper") {
+        return "Player Wins!"
+    }
+    else if (computerSelection == "Paper" && playerSelection == "Scissors") {
+        return "Player Wins!"
+    }
+    else if (computerSelection == "Scissors" && playerSelection == "Rock") {
+        return "Player Wins!"
+    }
+}
+
+console.log(playRound(computerSelection, playerSelection));

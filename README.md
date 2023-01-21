@@ -15,9 +15,9 @@ A JavaScript Program meant to demonstrate the basic fundamentals of using HTML a
 - [x] Use the Console to Ensure this Function is Behaving
 
 ### playRound Function
-- [ ] Create Function 'playRound' to Play a Single Round
-- [ ] The Function Should Have Inputs: 'playerSelection' and 'computerSelection'
-- [ ] The Function will Return the String that Declares a Winner
+- [x] Create Function 'playRound' to Play a Single Round
+- [x] The Function Should Have Inputs: 'playerSelection' and 'computerSelection'
+- [x] The Function will Return the String that Declares a Winner
 
 ### Make playRound Case Insensitive
 - [ ] Make 'playRound' ignore cases
