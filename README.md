@@ -34,10 +34,10 @@ const computerSelection = getComputerChoice();
 console.log(playRound(playerSelection, computerSelection));
 
 ### game Function
-- [ ] Create a Function Called 'game()'
-- [ ] Call the playRound function insde of this one to play a 5 round game
-- [ ] Keep score and report the winner and loser at the end
-- [ ] Use a loop to play 5 rounds
+- [x] Create a Function Called 'game()'
+- [x] Call the playRound function insde of this one to play a 5 round game
+- [x] Keep score and report the winner and loser at the end
+- [x] Use a loop to play 5 rounds
 
 #### game Function Loop Notes
 for (let i = 0; i < 5; i++) {
@@ -46,7 +46,7 @@ for (let i = 0; i < 5; i++) {
 
 
 ### console.log() the End Results
-- [ ] Make sure the End Results Show via console.log()
+- [x] Make sure the End Results Show via console.log()
 
 ### User Prompt
-- [ ] Get Input from the User
+- [x] Get Input from the User
