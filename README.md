@@ -20,7 +20,7 @@ A JavaScript Program meant to demonstrate the basic fundamentals of using HTML a
 - [x] The Function will Return the String that Declares a Winner
 
 ### Make playRound Case Insensitive
-- [ ] Make 'playRound' ignore cases
+- [x] Make 'playRound' ignore cases
 
 ### Make Function Return
 - [ ] Make Function use return instead of Display via console.log()

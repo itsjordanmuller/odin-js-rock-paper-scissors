@@ -12,36 +12,45 @@ function computerChoice(randomNum) {
         return "Error - Invalid Input"
     }
 }
+
 // Print Out Computer Choice in Console
 computerSelection = computerChoice(randomNum);
-userInput = "rock";
+userInput = "paper";
 
-playerSelection = "Rock";
+// Capitlization Function
+function capitalize(userInput) {
+    return(userInput.charAt(0)).toUpperCase().concat((userInput.slice(1, userInput.length)).toLowerCase())
+}
+
+playerSelection = capitalize(userInput);
+
+console.log(playerSelection)
 
 console.log("Computer Choice: "+computerSelection)
 console.log("Player Choice: "+playerSelection)
+
 function playRound (playerSelection, computerSelection) {
-    if (computerSelection == playerSelection) {
+    if (computerSelection === playerSelection) {
         return "It's a Tie!";
     }
-    else if (computerSelection == "Paper" && playerSelection == "Rock") {
-        return "Computer Wins!"
-    } 
-    else if (computerSelection == "Rock" && playerSelection == "Scissors") {
+    else if (computerSelection === "Scissors" && playerSelection === "Paper") {
         return "Computer Wins!"
     }
-    else if (computerSelection == "Scissors" && playerSelection == "Paper") {
+    else if (computerSelection === "Rock" && playerSelection === "Scissors") {
         return "Computer Wins!"
     }
-    else if (computerSelection == "Rock" && playerSelection == "Paper") {
+    else if (computerSelection === "Paper" && playerSelection === "Rock") {
+        return "Computer Wins!"
+    }
+    else if (computerSelection === "Paper" && playerSelection === "Scissors") {
         return "Player Wins!"
     }
-    else if (computerSelection == "Paper" && playerSelection == "Scissors") {
+    else if (computerSelection === "Scissors" && playerSelection === "Rock") {
         return "Player Wins!"
     }
-    else if (computerSelection == "Scissors" && playerSelection == "Rock") {
+    else if (computerSelection === "Rock" && playerSelection === "Paper") {
         return "Player Wins!"
     }
 }
 
-console.log(playRound(computerSelection, playerSelection));
+console.log(playRound(playerSelection, computerSelection))
