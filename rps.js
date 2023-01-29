@@ -56,20 +56,19 @@ function game() {
     let playerScore = 0;
     let computerScore = 0;
 
-    for (let i = 0; i < 5; i++) {
-        let randomNum = Math.floor((Math.random() * 3) + 1);
-        let computerSelection = computerChoice(randomNum);
-        let userInput = prompt("Enter your choice: Rock, Paper or Scissors");
-        let playerSelection = capitalize(userInput);
-        let result = playRound(playerSelection, computerSelection);
-        console.log("Round " + (i + 1) + ": " + result);
+    let randomNum = Math.floor((Math.random() * 3) + 1);
+    let computerSelection = computerChoice(randomNum);
+    let userInput = prompt("Enter your choice: Rock, Paper or Scissors");
+    let playerSelection = capitalize(userInput);
+    let result = playRound(playerSelection, computerSelection);
+    console.log("Result: " + result);
 
-        if (result === "Player Wins!") {
-            playerScore++;
-        } else if (result === "Computer Wins!") {
-            computerScore++;
-        }
+    if (result === "Player Wins!") {
+        playerScore++;
+    } else if (result === "Computer Wins!") {
+        computerScore++;
     }
+
 console.log("Player Score: " + playerScore);
 console.log("Computer Score: " + computerScore);
 if (playerScore > computerScore) {
