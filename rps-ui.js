@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function() {
-
     const rockButton = document.querySelector("#rock");
     const paperButton = document.querySelector("#paper");
     const scissorsButton = document.querySelector("#scissors");
@@ -9,6 +8,11 @@ document.addEventListener("DOMContentLoaded", function() {
     let playerScore = 0;
     let computerScore = 0;
     let round = 1;
+
+    function updateRound() {
+        document.querySelector("#round").innerHTML = `Round ${round}`;
+      }
+      
 
     function computerChoice() {
         let randomNum = Math.floor((Math.random() * 3) + 1);
@@ -25,13 +29,22 @@ document.addEventListener("DOMContentLoaded", function() {
         let computerSelection = computerChoice();
         if (computerSelection === playerSelection) {
             return "It's a Tie!";
-        } else if (computerSelection === "Scissors" && playerSelection === "Paper") {
+        } else if (
+            computerSelection === "Scissors" &&
+            playerSelection === "Paper"
+        ) {
             computerScore++;
             return "Computer Wins!";
-        } else if (computerSelection === "Rock" && playerSelection === "Scissors") {
+        } else if (
+            computerSelection === "Rock" &&
+            playerSelection === "Scissors"
+        ) {
             computerScore++;
             return "Computer Wins!";
-        } else if (computerSelection === "Paper" && playerSelection === "Rock") {
+        } else if (
+            computerSelection === "Paper" &&
+            playerSelection === "Rock"
+        ) {
             computerScore++;
             return "Computer Wins!";
         } else {
@@ -42,27 +55,32 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function updateScore() {
         scoreDisplay.innerHTML = `Player: ${playerScore} Computer: ${computerScore}`;
-        if (playerScore === 5 || computerScore === 5) {
-            resultDisplay.innerHTML = playerScore === 5 ? "Player wins the game!" : "Computer wins the game!";
-            rockButton.style.display = "none";
-            paperButton.style.display = "none";
-            scissorsButton.style.display = "none";
+        if (playerScore === 5) {
+            resultDisplay.innerHTML = "Player wins the game!";
+        } else if (computerScore === 5) {
+            resultDisplay.innerHTML = "Computer wins the game!";
         }
     }
 
+    function handleButtonClick(playerSelection) {
+        if (playerScore < 5 && computerScore < 5) {
+            resultDisplay.innerHTML = playRound(playerSelection);
+            updateScore();
+            round++;
+            updateRound();
+        }
+    }
+
+    //Update the round display when a button is clicked
     rockButton.addEventListener("click", function() {
-        resultDisplay.innerHTML = playRound("Rock");
-        updateScore();
+        handleButtonClick("Rock");
     });
 
     paperButton.addEventListener("click", function() {
-        resultDisplay.innerHTML = playRound("Paper");
-        updateScore();
+        handleButtonClick("Paper");
     });
 
     scissorsButton.addEventListener("click", function() {
-        resultDisplay.innerHTML = playRound("Scissors");
-        updateScore();
+        handleButtonClick("Scissors");
     });
-
 });
