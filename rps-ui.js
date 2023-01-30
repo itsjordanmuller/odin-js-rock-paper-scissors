@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const scissorsButton = document.querySelector("#scissors");
     const resultDisplay = document.querySelector("#result");
     const scoreDisplay = document.querySelector("#score");
+    const resetButton = document.querySelector("#reset");
 
     let playerScore = 0;
     let computerScore = 0;
@@ -70,6 +71,16 @@ document.addEventListener("DOMContentLoaded", function() {
             updateRound();
         }
     }
+
+    // Reset the game when the reset button is clicked
+    resetButton.addEventListener("click", function() {
+        playerScore = 0;
+        computerScore = 0;
+        round = 1;
+        resultDisplay.innerHTML = "";
+        scoreDisplay.innerHTML = `Player: ${playerScore} Computer: ${computerScore}`;
+        updateRound();
+    });
 
     //Update the round display when a button is clicked
     rockButton.addEventListener("click", function() {

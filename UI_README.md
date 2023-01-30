@@ -10,8 +10,9 @@ In our UI, the player should be able to play the game by clicking on buttons rat
 - [x] For now, remove the logic that plays exactly five rounds.
 - [x] Create three buttons, one for each selection. Add an event listener to the buttons that call your playRound function with the correct playerSelection every time a button is clicked. (you can keep the console.logs for this step)
 - [x] Add a div for displaying results and change all of your console.logs into DOM methods.
-- [ ] Display the running score, and announce a winner of the game once one player reaches 5 points.
-- [ ] You will likely have to refactor (rework/rewrite) your original code to make it work for this. That’s OK! Reworking old code is an important part of a programmer’s life.
+- [x] Display the running score, and announce a winner of the game once one player reaches 5 points.
+- [x] You will likely have to refactor (rework/rewrite) your original code to make it work for this. That’s OK! Reworking old code is an important part of a programmer’s life.
+- [x] Create Reset Button to Allow User to Start New Game Without Refreshing Page
 - [ ] Once you’re all done with your UI and made sure everything’s satisfactory, commit your changes to the rps-ui branch.
 - [ ] Now let’s take a look at how we can merge the changes from our rps-ui branch back to our main branch.
 - [ ] Checkout the branch we want to merge INTO i.e. main with the command git checkout main.
