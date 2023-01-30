@@ -67,7 +67,8 @@ In our UI, the player should be able to play the game by clicking on buttons rat
 - [x] You will likely have to refactor (rework/rewrite) your original code to make it work for this. That’s OK! Reworking old code is an important part of a programmer’s life.
 - [x] Create Reset Button to Allow User to Start New Game Without Refreshing Page
 - [x] Once you’re all done with your UI and made sure everything’s satisfactory, commit your changes to the rps-ui branch.
-Now let’s take a look at how we can merge the changes from our rps-ui branch back to our main branch.
+
+### Now let’s take a look at how we can merge the changes from our rps-ui branch back to our main branch.
 - [x] Checkout the branch we want to merge INTO i.e. main with the command git checkout main.
 - [x] Now let’s merge our rps-ui branch into main, our current branch, with git merge rps-ui.
 - [x] If everything goes fine, our rps-ui branch is now successfully merged with main! Use git log and you’ll see all the commits you’ve made to your feature branch on top of the commits you made to the main branch. Now for our final step!
