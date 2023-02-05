@@ -2,3 +2,18 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
 }
+
+h1 {
+    margin-top: 50px;
+}
+
+div {
+    margin: 25px 0;
+}
+  
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    margin: 0 10px;
+}
