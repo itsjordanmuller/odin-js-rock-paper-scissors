@@ -10,10 +10,31 @@ h1 {
 div {
     margin: 25px 0;
 }
-  
+
 button {
     padding: 10px 20px;
     font-size: 18px;
     border-radius: 5px;
     margin: 0 10px;
+}
+
+#rock {
+    background-color: gray;
+    color: white;
+}
+
+#paper {
+    background-color: white;
+    color: gray;
+    border: 1px solid gray;
+}
+
+#scissors {
+    background-color: black;
+    color: white;
+}
+
+#reset {
+    background-color: red;
+    color: white;
 }
