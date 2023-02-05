@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const scissorsButton = document.querySelector("#scissors");
     const resultDisplay = document.querySelector("#result");
     const scoreDisplay = document.querySelector("#score");
+    const roundDisplay = document.querySelector("#round");
     const resetButton = document.querySelector("#reset");
 
     let playerScore = 0;
@@ -11,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let round = 1;
 
     function updateRound() {
-        document.querySelector("#round").innerHTML = `Round ${round}`;
+        roundDisplay.innerHTML = `Round ${round}`;
       }
       
 
